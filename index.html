@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,7 +8,7 @@
     </head>
     <body>
         <header>Memoji</header>
-        <main>
+        <main class="cards">
             <div class="card"></div>
             <div class="card"></div>
             <div class="card"></div>
@@ -23,6 +22,20 @@
             <div class="card"></div>
             <div class="card"></div>
         </main>
+        <div class="alert invisible">
+            <div class="alert__window">
+                <div class="alert__content">
+                    <div class="alert_message lose invisible">
+                        <span>Вы проиграли</span>
+                    </div>
+                    <div class="alert_message win invisible">
+                        <span>Поздравляем с победой</span>
+                    </div>
+                    <button class="alert__button">Играть снова</button>
+                </div>
+            </div>
+        </div>
+        <div class="timer"></div>
         <script src="script.js"></script>
     </body>
 </html>
